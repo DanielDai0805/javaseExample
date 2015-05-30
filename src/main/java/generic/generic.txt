@@ -1,0 +1,33 @@
+***type parameters(type variables) definition***
+class name<T1,T2,...,Tn>{/*...*/}
+the type parameter section ,delimited by angle brackets(<>),follows the class name .it specifies the type parameters(also called type variables) T1,T2....,and Tn
+***The most commonly used type parameter names are***
+E -Element(userd extensively by the java collections Framework)
+K  -Key
+N  -Number
+T  -Type
+V  -Value
+S,U,V etc. -2nd,3rd ,4th types
+***Type Parameter and Type Argument Terminology***
+Many developers use the terms "type parameter" and "type argument" interchangeably, but these terms are not the same.
+When coding, one provides type arguments in order to create a parameterized type. Therefore, the T in Foo<T> is a type parameter and the String in Foo<String> f is a type argument. This lesson observes this definition when using these terms.
+***Parameterized Type***
+You can also substitute a type parameter (i.e., K or V) with a parameterized type (i.e., List<String>). For example, using the OrderedPair<K, V> example:
+
+OrderedPair<String, Box<Integer>> p = new OrderedPair<>("primes", new Box<Integer>(...));
+***Raw Types***
+a raw type is the name of a generic class or interface without any type arguments.for example given the generic Box class
+	public class Box<T>{
+		public void set(T t){/*...*/}
+	}
+
+to create a parameterized type of Box<T>,you supply an actual type argument for the formal type parameter T:
+ Box<Integer> intBox = new box<>();
+ if the actual type argument is ommitted ,you create a raw type of Box<T>;
+ Box rawBox = new Box();
+
+ ***Unbounded Wildcards***
+ There are two scenarios where an unbounded wildcard is a useful approach
+ If you are writing a method that can be implemented using functionality provided in the Object class.
+ If you are writing a method that can be implemented using functionality provided in the Object class.
+When the code is using methods in the generic class that don't depend on the type parameter. For example, List.size or List.clear. In fact, Class<?> is so often used because most of the methods in Class<T> do not depend on T.
