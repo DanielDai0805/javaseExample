@@ -1,0 +1,10 @@
+link:https://docs.oracle.com/javase/tutorial/jaxp/intro/package.html
+
+SAX:simple API for XML
+The SAX and DOM APIs are defined by the XML-DEV group and by the W3C ,respectively .The libraries that define those APIs are as follows
+    *javax.xml.parsers:The JAXP APIs ,which provide a common interface for different vendor;s SAX and DOM parsers.
+    * org.w3c.dom:Defines the Document class(a DOM) as well as classes for all the components of a DOM.
+    * org.xml.sax:Defines the basic SAX APIs
+    *java.xml.transform:Defines the XSLT APIs that let you transform XML into other forms
+    *java.xml.stream:Provides stax-specific transformation APIs
+
