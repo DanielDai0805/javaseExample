@@ -1,4 +1,4 @@
-package se.clz;
+package clz;
 
 import org.junit.Test;
 
@@ -7,9 +7,9 @@ import org.junit.Test;
  */
 public class ClassLoaderTest {
     /**
-     * Bootstrap ClassLoader :  %JRE_HOME%/lib目录下的rt.jar resource.jar charsets.jar 和class等
-     * Extension ClassLoader:   主要是加载java扩展的类，主要是%JRE_HOME/lib/ext目录下的jia和class%
-     * App ClassLoader:         负载加载当前java应用中的classpaht中的所有类
+     * Bootstrap ClassLoader :  %JRE_HOME%/lib目录锟铰碉拷rt.jar resource.jar charsets.jar 锟斤拷class锟斤拷
+     * Extension ClassLoader:   锟斤拷要锟角硷拷锟斤拷java锟斤拷展锟斤拷锟洁，锟斤拷要锟斤拷%JRE_HOME/lib/ext目录锟铰碉拷jia锟斤拷class%
+     * App ClassLoader:         锟斤拷锟截硷拷锟截碉拷前java应锟斤拷锟叫碉拷classpaht锟叫碉拷锟斤拷锟斤拷锟斤拷
      */
     @Test
     public void testClassLoader(){

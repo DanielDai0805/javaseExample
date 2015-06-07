@@ -1,4 +1,4 @@
-package se.clz;
+package clz;
 
 import org.junit.Test;
 
